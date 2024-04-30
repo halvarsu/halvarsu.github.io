@@ -1,11 +1,128 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="no" >
   <head>
-    <title>fractal-trees</title>
-    <script src="js/main.js"></script>
-  </head>
-  <body>
-    <canvas id="fractal-trees"></canvas>
-    <canvas id="slider-trees"></canvas>
-  </body>
+    <title>HJEMMESIDE</title>
+    <meta charset="UTF-8"/> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $("h1").hover(
+    function()
+    {
+        $(this).animate({fontSize: "80px"},200);
+    }, function(){
+        $(this).animate({fontSize: "60px"},200);
+    });
+    $("a").hover(
+    function()
+    {
+        $(this).animate({fontSize: "1.2rem"},200);
+    }, function(){
+        $(this).animate({fontSize: "1rem"},200);
+    });
+});
+    </script>
+    <script> 
+        function changeBg(name,color = 'white'){
+            var body = document.getElementsByTagName('body')[0];
+            document.getElementById('content').style.backgroundImage
+                = 'url(http://folk.uio.no/halvarsu/images/'+name+')';
+            
+            if (body.style.backgroundColor  != color){
+                body.style.background = color;
+        }
+
+    }
+    </script>
+    <!-- <script type="text/javascript" src="images/animations/js/main.js"></script> -->
+
+    <meta name="description" content="Filer knyttet til obliger og diverse annet">
+    <link rel="stylesheet" type="text/css" href="main.css"\>
+
+    <meta name="keyword" content="gif, hmtl"/>
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+  integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+  crossorigin="anonymous">
+</head>
+
+
+<body>
+<div id="wrapper">
+    
+    <nav id="horzNav">
+        <p>
+            <a href="semester">Semester</a>
+            <a href="images">Images</a>
+            <a href="files">Files</a>
+            <a href="diverse">Diverse</a>
+            <a href="https://github.com/halvarsu/">My github</a>
+        </p>
+    </nav>
+
+    <main id="content">
+    <div id="mainHeader">
+        <h1 class="animated bounce">HALVARSU</h1>
+    </div>
+        
+        <div id="maintext">
+        <ol id="main-list">
+        </ol> 
+
+        <p id='todo'> </p>
+        </div>  
+    </main>
+
+
+        
+<p id="footer">&copy; Halvard Sutterud AS</p>
+        <div id="buttons">
+        <p>
+        Magic!:<br>
+            <button type="button" onclick="changeBg('komplisert_virvling.png')">_</button>
+            <button type="button" onclick="changeBg('piler.png')">_</button>
+            <button type="button" onclick="changeBg('ani.gif')">_</button>
+            <button type="button" onclick="changeBg('velfieldanim.gif')">_</button>
+            <button type="button" onclick="changeBg('varmeledning.png')">_</button>
+            <button type="button" onclick="changeBg('3dfig.png')">_</button>
+            <button type="button" onclick="changeBg('figure1.png')">_</button>
+            <button type="button" onclick="changeBg('varme_oops.png')">_</button>
+            <button type="button" onclick="changeBg('kaos.png')">_</button>
+            <button type="button" onclick="changeBg('launch_gif.gif')">_</button>
+            <button type="button" onclick="changeBg('wave.gif')">_</button>
+            <button type="button"
+                onclick="changeBg('flower_petals7.png',color = '#808080')">_</button>
+            <button type="button" onclick="changeBg('closing_in.png')">_</button>
+            <button type="button"
+                onclick="changeBg('flyby_p4.png')">_</button>
+            <button type="button"
+                onclick="changeBg('spiral.png',color='black')">_</button>
+            <button type="button" onclick="changeBg('orbits_wtf.png')">_</button>
+            <button type="button"
+                onclick="changeBg('cycloid0.49.png',color='black')">_</button>
+            <button type="button"
+                onclick="changeBg('cycloid1.05.png',color='black')">_</button>
+            <button type="button"
+                onclick="changeBg('cycloid2.60.png',color='black')">_</button>
+            <button type="button"
+                onclick="changeBg('cycloid-28.85.png',color='black')">_</button>
+            <button type="button"
+                onclick="changeBg('nice2.png',color='black')">_</button>
+            <button type="button"
+                onclick="changeBg('Nice.png',color='black')">_</button>
+            <button type="button"
+                onclick="changeBg('coherent.gif',color='white')">_</button>
+        </p>
+                 <a href=></a>
+                 <input type="button"
+                 onclick="location.href='images/animations';" value="Also
+                 check out my cljs-animations" />
+        </div>
+</div>
+
+
+<!-- <canvas id="random-walker"></canvas> --> 
+</body>
 </html>

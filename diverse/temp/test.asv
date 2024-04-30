@@ -1,0 +1,7 @@
+
+mat = rand(4,3)
+svdApprox(mat,2)
+mm = imread('mm.gif')
+mm = double(mm)
+size(mm)
+rank(

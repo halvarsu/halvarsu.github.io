@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+        $('html, div[id="hei"]').append($.attr(this, 'href'));
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 5000);
+    });
+    $(document).on('click', 'a[href^="http://folk.uio.no/halvarsu/test_webpage/#"]', function (event) {
+        event.preventDefault();
+        $('html, div[id="hei"]').append($.attr(this, 'href'));
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 5000);
+    });
+    </script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    </head>
+    <body>
+
+
+
+    <p>
+    <a href="#kontakt">intern link</a>
+    </p>
+    <p>
+    <a href=http://folk.uio.no/halvarsu/test_webpage/#kontakt>link med adresse</a>
+        <h1 class="animated infinite rotateIn">Example</h1>
+
+</p>
+
+<div id="hei">hei</div>
+
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+<p>fyll</p>
+
+
+
+<div id=kontakt><p>kontakt</p></div>
+
+
+</body>
+</html>
+

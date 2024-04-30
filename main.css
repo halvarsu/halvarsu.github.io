@@ -1,0 +1,136 @@
+body {
+    font-family: Palatino, 'Palatino Linotype', serif;
+
+}
+
+div#wrapper {
+    margin: 0 auto;
+    height: 1500 px;
+    width: 54rem; 
+}
+
+header {
+    display:block;
+    padding: 0px 0px 00px 0px;
+}
+
+#horzNav {
+    display: block;
+    padding: 5px 20px 5px 5px;
+    background-color: DarkOliveGreen; 
+}
+
+#horzNav a{
+    text-decoration: none;
+    padding: 0px 0px 0px 20px;
+    color: rgb(128,204,128);
+}
+#horzNav a:hover{
+    color: rgb(160,80,80);
+}
+#buttons{
+    width:180px;
+    float:right;
+}
+
+
+
+
+main{
+    font-family: Palatino, 'Palatino Linotype', serif;
+    background-size:cover;
+    background-position: center;
+    padding:10px 10px 50px 20px;
+    float: left;
+    width: 834px;
+    height: 600px;
+}
+#content{
+    background-image:url("http://folk.uio.no/halvarsu/images/wave.gif");
+}
+
+main h1 {
+	color: rgb(80,160,160); 
+    font-family: Palatino, 'Palatino Linotype', serif;
+	font-size: 64px;
+    text-align: center;
+    border: 5px solid DarkOliveGreen;
+    background: rgba(255,255,255, 0.75);
+}
+main h1:hover{
+    color: rgb(80,160,80);
+}
+main #maintext {
+    /*
+    border: 5px solid DarkOliveGreen;
+    padding: 0px 20px ;
+    background: rgba(128,204,128, 0.75);
+    min-height: 300px;
+    background: rgba(255,255,255, 0.75); */
+}
+#sidebar {
+    padding: 20px 10px 10px 10px ;
+    text-align: center;
+    float:  right;
+    width: 180px;
+    border: 5px solid DarkOliveGreen;
+    height: auto;
+    background: rgb(128,204,128);
+}
+#sidebar h4 {
+    padding: 0px;
+
+#sidebar a:hover{ color: green;}
+
+#main-list {
+    padding-left: 70px;
+}
+#footer {
+    font-size: 0.75rem;
+    clear:both;
+    padding: 0px 0px 0px 20px;
+    color: rgb(128,204,128);
+    padding: 5px 20px 5px 5px;
+    background-color: DarkOliveGreen; 
+    float: bottom;
+}
+#todo {
+    font-size: 0.75rem;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+
+
+/* Comments 
+
+h2 {
+	font-size: 32px;
+}
+
+h1:hover{ 
+color: blue} 
+
+p {
+	font-size: 1rem;
+}
+
+#footer {
+	font-size: 0.75rem;
+}
+
+.hero a {
+	color: DarkOliveGreen;
+	font-size: 1.25em;
+	text-decoration: none;
+}
+a:hover { color: green;}
+a:active { color: red;}
+*/
+

@@ -1,0 +1,68 @@
+ \documentclass{article}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.05in,top=0.05in,bottom=0in]{geometry}
+\usepackage{amsmath}
+\usepackage{lipsum}
+\usepackage{physics}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{mdframed}
+\usepackage{titlesec}
+%
+\usepackage{xparse}
+\usepackage{siunitx}
+
+\setlist{nolistsep,leftmargin=*}
+
+
+%%% Div utrykk
+\newcommand{\rmd}{{\mathrm d}}
+
+\newcommand{\oder}[2]{\frac{{\mathrm d}#1}{{\mathrm d}#2}}
+\newcommand{\odder}[2]{\frac{{\mathrm d}^2#1}{{\mathrm d}#2^2}}
+\newcommand{\pd}[1]{\frac{\partial}{\partial #1}}
+\newcommand{\pdt}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\smallpdt}[2]{\partial #1/\partial #2}
+\newcommand{\pddt}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\tpddt}[2]{\tfrac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\npdt}[3]{\frac{\partial^{#3} #1}{\partial #2^{#3}}}
+\newcommand{\inftyintx}[1]{\int_{-\infty }^\infty  #1 dx}
+\newcommand{\inftyint}[2]{\int_{-\infty }^\infty  #1 d#2}
+
+
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\small\bfseries}
+\titleformat*{\subsubsection}{\fontsize{5}{5}\bfseries}
+\titleformat*{\paragraph}{\large\bfseries}
+\titleformat*{\subparagraph}{\large\bfseries}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+
+\newcounter{postulatctr}
+\newenvironment{postulat}%
+    {\begin{mdframed}
+        \noindent\ignorespaces%
+    \refstepcounter{postulatctr}%
+        \textbf{Postulat \thepostulatctr:}}%
+    {\end{mdframed}\ignorespacesafterend}
+
+    %\numberwithin{postulatctr}{section}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document} 
+
+\fontsize{6}{6}\selectfont
+\begin{multicols}{3}
+\noindent
+\setlength{\abovedisplayskip}{0pt}
+\setlength{\belowdisplayskip}{0pt}
+\setlength{\abovedisplayshortskip}{0pt}
+\setlength{\belowdisplayshortskip}{0pt}
+
+\end{multicols}
+\end{document}
+
